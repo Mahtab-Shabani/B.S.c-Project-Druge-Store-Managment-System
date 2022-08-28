@@ -1,0 +1,581 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{746424B3-1A76-4144-9C74-11FA03800996}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>project</RootNamespace>
+    <AssemblyName>project</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="analogclockcontrol, Version=1.0.1870.27293, Culture=neutral" />
+    <Reference Include="Clock, Version=1.0.3030.28863, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="DotNetMagic2005, Version=4.2.0.0, Culture=neutral, PublicKeyToken=6cf6edec59e036ec, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TimeAndDate, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TimeAndDate\TimeAndDate\bin\Debug\TimeAndDate.dll</HintPath>
+    </Reference>
+    <Reference Include="vtdll_scrl_mf, Version=1.0.1956.26961, Culture=neutral, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="access_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="access_frm.Designer.cs">
+      <DependentUpon>access_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="body_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="body_frm.Designer.cs">
+      <DependentUpon>body_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changeUser_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changeUser_frm.Designer.cs">
+      <DependentUpon>changeUser_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassAccessLevel.cs" />
+    <Compile Include="ClassBody.cs" />
+    <Compile Include="ClassCostDrug.cs" />
+    <Compile Include="ClassCostLavazem.cs" />
+    <Compile Include="ClassDrug.cs" />
+    <Compile Include="ClassLavazem.cs" />
+    <Compile Include="ClassPersonal.cs" />
+    <Compile Include="ClassSaleLavazem.cs" />
+    <Compile Include="ClassSellDrug.cs" />
+    <Compile Include="ClassSick.cs" />
+    <Compile Include="costDrug_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="costDrug_frm.Designer.cs">
+      <DependentUpon>costDrug_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="costLavazem_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="costLavazem_frm.Designer.cs">
+      <DependentUpon>costLavazem_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="darookhaneDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>darookhaneDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="darookhaneDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>darookhaneDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="darookhaneDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>darookhaneDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="darookhaneDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>darookhaneDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="darookhaneDataSet4.cs">
+      <DependentUpon>darookhaneDataSet4.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="darookhaneDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>darookhaneDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="darookhaneDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>darookhaneDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="darookhaneDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>darookhaneDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="darookhaneDataSetCost.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>darookhaneDataSetCost.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="darookhaneDataSetUser.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>darookhaneDataSetUser.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="drug_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="drug_frm.Designer.cs">
+      <DependentUpon>drug_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lavazem_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lavazem_frm.Designer.cs">
+      <DependentUpon>lavazem_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="exit_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="exit_frm.Designer.cs">
+      <DependentUpon>exit_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginClss.cs" />
+    <Compile Include="login_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_frm.Designer.cs">
+      <DependentUpon>login_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_frm.Designer.cs">
+      <DependentUpon>main_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personal_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personal_frm.Designer.cs">
+      <DependentUpon>personal_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="access_frm.resx">
+      <DependentUpon>access_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="body_frm.resx">
+      <DependentUpon>body_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changeUser_frm.resx">
+      <DependentUpon>changeUser_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="costDrug_frm.resx">
+      <DependentUpon>costDrug_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="costLavazem_frm.resx">
+      <DependentUpon>costLavazem_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="drug_frm.resx">
+      <DependentUpon>drug_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lavazem_frm.resx">
+      <DependentUpon>lavazem_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="exit_frm.resx">
+      <DependentUpon>exit_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_frm.resx">
+      <DependentUpon>login_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_frm.resx">
+      <DependentUpon>main_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personal_frm.resx">
+      <DependentUpon>personal_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="saleDrug_frm.resx">
+      <DependentUpon>saleDrug_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="saleLavazem_frm.resx">
+      <DependentUpon>saleLavazem_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sick_frm.resx">
+      <DependentUpon>sick_frm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="saleDrug_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="saleDrug_frm.Designer.cs">
+      <DependentUpon>saleDrug_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="saleLavazem_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="saleLavazem_frm.Designer.cs">
+      <DependentUpon>saleLavazem_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sick_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sick_frm.Designer.cs">
+      <DependentUpon>sick_frm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recovered_Png_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recovered_Png_25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recovered_Png_23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10001.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\untitled.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jghhhjg_vitamins_070622_ms.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f_1m_f5962da.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drug111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hk_20080207_painkillers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Division of Clinical Pharmacy jump pix.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22112-38med.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22112-38med1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DSC00785.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12bf63d8955b0a3973d437ba8032415a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1243365510.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recovered_Png_54.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recovered_Png_34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jghhhjg_vitamins_070622_ms1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\jghhhjg_vitamins_070622_ms2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="darookhaneDataSet1.xsc">
+      <DependentUpon>darookhaneDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="darookhaneDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>darookhaneDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="darookhaneDataSet1.xss">
+      <DependentUpon>darookhaneDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Picture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="darookhaneDataSet2.xsc">
+      <DependentUpon>darookhaneDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="darookhaneDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>darookhaneDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="darookhaneDataSet2.xss">
+      <DependentUpon>darookhaneDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\New Division of Clinical Pharmacy jump pix1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageitem-big-080726003959-imageitem-big-080725110604-hair-style14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1255874750.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ddd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\216mezonshiva.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\216hijab2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\121472844011650imgcache.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\216mezonshiva1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\untitled1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="darookhaneDataSet3.xsc">
+      <DependentUpon>darookhaneDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="darookhaneDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>darookhaneDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="darookhaneDataSet3.xss">
+      <DependentUpon>darookhaneDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\216hijab21.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DSC00872.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DSC00871.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DSC00870.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DSC007851.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DSC00787.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="darookhaneDataSet.xsc">
+      <DependentUpon>darookhaneDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="darookhaneDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>darookhaneDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="darookhaneDataSet.xss">
+      <DependentUpon>darookhaneDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="darookhaneDataSet4.xsc">
+      <DependentUpon>darookhaneDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="darookhaneDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>darookhaneDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="darookhaneDataSet4.xss">
+      <DependentUpon>darookhaneDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="darookhaneDataSetUser.xsc">
+      <DependentUpon>darookhaneDataSetUser.xsd</DependentUpon>
+    </None>
+    <None Include="darookhaneDataSetUser.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>darookhaneDataSetUser.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="darookhaneDataSetUser.xss">
+      <DependentUpon>darookhaneDataSetUser.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DSC00788.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\untitled8.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recovered_Png_231.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-rtl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recovered_Png_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\untitled.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gq-cmd-edit-delete.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gq-edit.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gq-cmd-file-new.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recovered_Png_2311.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recovered_Png_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="darookhaneDataSet6.xsc">
+      <DependentUpon>darookhaneDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="darookhaneDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>darookhaneDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="darookhaneDataSet6.xss">
+      <DependentUpon>darookhaneDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="darookhaneDataSetCost.xsc">
+      <DependentUpon>darookhaneDataSetCost.xsd</DependentUpon>
+    </None>
+    <None Include="darookhaneDataSetCost.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>darookhaneDataSetCost.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="darookhaneDataSetCost.xss">
+      <DependentUpon>darookhaneDataSetCost.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\search-rtl1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recovered_Png_42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\untitled11.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recovered_Png_27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\untitled2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flpc-out-of-date.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gq-open-parent-folder.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\untitled101.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recovered_Png_30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recovered_Png_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save16_d.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_green16.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="darookhaneDataSet5.xsc">
+      <DependentUpon>darookhaneDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="darookhaneDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>darookhaneDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="darookhaneDataSet5.xss">
+      <DependentUpon>darookhaneDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\untitled12.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\untitled13.JPG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
