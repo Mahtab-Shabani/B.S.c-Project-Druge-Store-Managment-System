@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Language>
+  
+  <LCID>1066</LCID>
+  <Name>فارسی</Name>
+  <Font></Font>
+  <RightToLeft>True</RightToLeft>
+  <Font>Tahoma; 8pt</Font><!--name; size[units[; style=style1[; style2; ...]]]-->
+  <CompatibleVersion>2009.04.3.0</CompatibleVersion>
+
+  <Dictionary>
+    <Item Key="Forms.Main.Button.Start">شروع</Item>
+    <Item Key="Forms.Main.Button.Stop">توقف</Item>
+    <Item Key="Forms.Main.FileCount">فایلها :</Item>
+    <Item Key="Forms.Main.LineCount">خطها :</Item>
+    <Item Key="Forms.Main.Grid.LineCount">خطها</Item>
+    <Item Key="Forms.Main.Grid.FileName">نام فایل</Item>
+    <Item Key="Forms.Main.Grid.FileSize">حجم فایل</Item>
+    <Item Key="Forms.Main.Grid.FilePath">مسیر</Item>
+    <Item Key="Forms.Main.SourcePath">محل سورس :</Item>
+    <Item Key="Forms.Main.FilterAcceptFile">فایلهای مجاز :</Item>
+    <Item Key="Forms.Main.FilterIgnoreFile">فایلهای غیر مجاز :</Item>
+    <Item Key="Forms.Main.MinChars">کاراکتر در خط :</Item>
+    <Item Key="Forms.Main.Browse">جستجو ...</Item>
+    <Item Key="Forms.Main.Menu.Start">شروع</Item>
+    <Item Key="Forms.Main.Menu.BrowseVs">جستجوی پروژه VS ...</Item>
+    <Item Key="Forms.Main.Menu.BrowseDir">جستجوی دایرکتوری...</Item>
+    <Item Key="Forms.Main.Menu.BrowseFile">جستجو فایل ...</Item>
+    <Item Key="Forms.Main.Menu.Update">به روز رسانی</Item>
+    <Item Key="Forms.Main.Menu.Open">بازکردن</Item>
+    <Item Key="Forms.Main.Menu.OpenNotepad">بازکردن با &amp;Notepad</Item>
+    <Item Key="Forms.Main.Menu.OpenDir">بازکردن پوشه</Item>
+    <Item Key="Forms.Main.Menu.Copy">کپی</Item>
+    <Item Key="Forms.Main.Menu.CopyPath">کپی مسیر</Item>
+    <Item Key="Forms.Main.Menu.Property">مشخصات</Item>
+    <Item Key="Forms.Main.Menu.HandledFileExtensions">مدیریت راست کلیک فایل در MyComputer</Item>
+    <Item Key="Forms.Main.Menu.Language">زبان</Item>
+    <Item Key="Forms.Main.Menu.About">درباره</Item>
+    <Item Key="Forms.Main.Menu.Default">(پیش فرض)</Item>
+    <Item Key="Forms.Main.Msg.Err.Regex">خطا در ترجمه عبارت با قاعده "{0}"</Item>
+    <Item Key="Forms.Update.Connecting">اتصال ...</Item>
+    <Item Key="Forms.Update.Downloading">دانلود ...</Item>
+    <Item Key="Forms.Update.Button.Stop">توقف</Item>
+    <Item Key="Forms.About.Button.OK">تایید</Item>
+
+    <Item Key="Forms.Main.Msg.Question.DriveScan">شما مطئن هستید که میخواهید این دراو اسکن شود?</Item>
+    <Item Key="Forms.Update.Msg.DontNeed">نسخه LOC شما به روز است.</Item>
+    <Item Key="Forms.Update.Msg.Err.NotFind">نسخه LOC شما به روز است.</Item>
+    <Item Key="Forms.Update.Msg.Question.Stop">شما مطمئن هستید که میخواهید به روز رسانی متوقف شود?</Item>
+    <Item Key="Forms.Update.Msg.UserCancel">به روز رسانی به وسیله کاربر لغو شد.</Item>
+    
+    <Item Key="Forms.Update.Msg.Err.Connect">
+      امکان اتصال به سرور وجود ندارد.
+      لطفاً برقراری ارتباط اینترنتی خودتان را چک کنید.
+    </Item>
+    
+    <Item Key="Forms.Update.Msg.Err.DNS">
+      نام سرور راه دور قابل تجزیه نیست: '{0}'
+      لطفاً برقراری ارتباط اینترنتی خودتان را چک کنید.
+    </Item>
+    
+    <Item Key="Forms.Update.Msg.Err.Download">
+      دانلود متوقف شد.
+      {0}
+      لطفاً برقراری ارتباط اینترنتی خودتان را چک کنید.
+    </Item>
+    
+    <Item Key="Forms.Update.Msg.Successfully">
+      آخرین نسخه LOC دانلود شد و در پوشه جاری ذخیره شد
+      {0}
+      برای به روز رسانی LOC متشکریم!
+    </Item>
+    
+  </Dictionary>
+  
+</Language>
