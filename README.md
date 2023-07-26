@@ -6,8 +6,8 @@
 
 *In Partial Fulfillment of the Requirement for the degree of Bachelor of Science in Software Engineering*
 
-By: **Mahtab Shabani**
-, November 2010
+*By: **Mahtab Shabani**
+, November 2010*
 
 
 We implement this system with a three-layer architecture. SQL SERVER is used for processing, storing, and retrieving data.
