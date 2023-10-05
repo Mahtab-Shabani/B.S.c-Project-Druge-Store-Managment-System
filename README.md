@@ -10,7 +10,9 @@
 , November 2010*
 
 
-We implement this system with a three-layer architecture. SQL SERVER is used for processing, storing, and retrieving data.
+We implement this system with a three-layer architecture. SQL SERVER is used for processing, storing, and retrieving data. 
+
+IDE: Visual Studio C#
 
 # DataSet
 
