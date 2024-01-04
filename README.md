@@ -8,9 +8,8 @@
 
 *By: **Mahtab Shabani**
 , November 2010*
-
-
-We implement this system with a three-layer architecture. SQL SERVER is used for processing, storing, and retrieving data. 
+ 
+We employ a three-layer architecture to create this system. Data processing, storing, and retrieval are done with SQL Server.
 
 IDE: Visual Studio C#
 
