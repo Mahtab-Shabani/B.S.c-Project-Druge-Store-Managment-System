@@ -9,7 +9,7 @@
 *By: **Mahtab Shabani**
 , November 2010*
  
-We employ a three-layer architecture to create this system. Data processing, storing, and retrieval are done with SQL Server.
+This is my bachelor's final project developed in **C#**. We employ a three-layer architecture to create this system. Data processing, storing, and retrieval are done with SQL Server.
 
 **IDE:** Visual Studio C#
 
